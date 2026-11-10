@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ozodbek — dasturchi. Zamonaviy web tajribalar va raqamli yechimlar.">
+  <title>Ozodbek — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Ozodbek home"><span class="brand-mark">O.</span><span>ozodbek<span class="brand-dot">/</span>dev</span></a>
+    <nav class="nav">
+      <a href="#about" data-i18n="navAbout">Men haqimda</a>
+      <a href="#skills" data-i18n="navSkills">Ko‘nikmalar</a>
+      <a href="#work" data-i18n="navWork">Ishlarim</a>
+      <a href="#contact" data-i18n="navContact">Aloqa</a>
+    </nav>
+    <div class="tools">
+      <button class="lang-btn" id="langToggle" aria-label="Change language">UZ <span>↗</span></button>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><span class="sun">☼</span><span class="moon">☾</span></button>
+      <button class="menu-btn" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="available">Yangi loyihalar uchun ochiqman</span></div>
+        <p class="hero-kicker" data-i18n="hello">SALOM, MEN</p>
+        <h1>Ozodbek<span class="outline-name">.</span></h1>
+        <div class="role-line"><span class="role-prefix">—</span> <span data-i18n="role">Dasturchi & kreativ fikrlovchi</span></div>
+        <p class="hero-desc" data-i18n="heroDesc">G‘oyalarni sodda, tezkor va esda qolarli raqamli tajribalarga aylantiraman. Har bir detal — maqsad sari bir qadam.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact"><span data-i18n="letsTalk">Loyiha boshlaymiz</span><span>↗</span></a>
+          <a class="text-link" href="#work"><span data-i18n="seeWork">Ishlarimni ko‘rish</span><span>↓</span></a>
+        </div>
+        <div class="hero-meta"><span>01 / 04</span><span class="meta-line"></span><span data-i18n="portfolio">PORTFOLIO — 2026</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img src="assets/ozodbek.jpg" alt="Ozodbek portreti">
+          <div class="portrait-label"><span>OZODBEK</span><span>DEVELOPER®</span></div>
+        </div>
+        <div class="floating-card card-code"><span class="card-icon">⌘</span><span>CODE<br><b>WITH PURPOSE</b></span></div>
+        <div class="floating-card card-year"><b>20<span>+</span></b><small data-i18n="curious">qiziquvchanlik</small></div>
+        <div class="crosshair cross-a">✳</div><div class="crosshair cross-b">✳</div>
+      </div>
+      <div class="scroll-note"><span class="scroll-line"></span><span data-i18n="scroll">PASTGA O‘TING</span></div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="section-index">01 <span>—</span> <span data-i18n="aboutLabel">MEN HAQIMDA</span></div>
+      <div class="about-grid">
+        <h2 data-i18n="aboutTitle">Texnologiya.<br><em>Ijodkorlik.</em><br>Natija.</h2>
+        <div class="about-text">
+          <p data-i18n="aboutText">Men Ozodbek — zamonaviy texnologiyalar va web dasturlashga qiziqadigan dasturchiman. Men uchun yaxshi sayt shunchaki chiroyli ko‘rinish emas: u qulay, tez va foydalanuvchiga haqiqiy qiymat berishi kerak.</p>
+          <div class="mini-stats">
+            <div><b>01<span>+</span></b><small data-i18n="statOne">Yil o‘rganish</small></div>
+            <div><b>∞</b><small data-i18n="statTwo">Yangi g‘oyalar</small></div>
+            <div><b>100<span>%</span></b><small data-i18n="statThree">Qiziqish</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-wrap" id="skills">
+      <div class="section-index">02 <span>—</span> <span data-i18n="skillsLabel">NIMALAR QILA OLAMAN</span></div>
+      <div class="section-heading"><h2 data-i18n="skillsTitle">Asboblarim <em>to‘plami.</em></h2><p data-i18n="skillsDesc">Har bir loyiha uchun mos texnologiyani tanlayman.</p></div>
+      <div class="skill-list">
+        <div class="skill-row"><span class="skill-no">01</span><div class="skill-name">HTML<span> / </span>CSS</div><div class="skill-detail" data-i18n="skill1">Tuzilma va vizual dizayn</div><div class="skill-arrow">↗</div></div>
+        <div class="skill-row"><span class="skill-no">02</span><div class="skill-name">JavaScript</div><div class="skill-detail" data-i18n="skill2">Interaktiv va dinamik sahifalar</div><div class="skill-arrow">↗</div></div>
+        <div class="skill-row"><span class="skill-no">03</span><div class="skill-name">UI<span> / </span>UX</div><div class="skill-detail" data-i18n="skill3">Foydalanuvchiga qulay tajriba</div><div class="skill-arrow">↗</div></div>
+        <div class="skill-row"><span class="skill-no">04</span><div class="skill-name" data-i18n="skill4name">Doimiy o‘rganish</div><div class="skill-detail" data-i18n="skill4">Yangi bilim va texnologiyalar</div><div class="skill-arrow">↗</div></div>
+      </div>
+    </section>
+
+    <section class="work section-wrap" id="work">
+      <div class="section-index">03 <span>—</span> <span data-i18n="workLabel">TANLANGAN YO‘NALISHLAR</span></div>
+      <div class="section-heading"><h2 data-i18n="workTitle">G‘oyadan <em>yechimgacha.</em></h2><p data-i18n="workDesc">Men yaratishni yoqtiradigan raqamli tajribalar.</p></div>
+      <div class="work-grid">
+        <article class="work-card work-dark"><div class="work-top"><span>01 / WEB</span><span>↗</span></div><div class="abstract-browser"><div class="browser-bar"><i></i><i></i><i></i><span>ozodbek.dev</span></div><div class="browser-content"><div class="browser-lines"><b></b><i></i><i></i><i></i></div><div class="browser-shape"></div></div></div><h3 data-i18n="project1">Shaxsiy portfolio</h3><p data-i18n="project1desc">Shaxsiyat va mahoratni namoyish qiluvchi web sahifa.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JS</span></div></article>
+        <article class="work-card work-lime"><div class="work-top"><span>02 / DIGITAL</span><span>↗</span></div><div class="abstract-dashboard"><div class="dash-side"></div><div class="dash-main"><div class="dash-pill"></div><div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-bottom"><i></i><i></i></div></div></div><h3 data-i18n="project2">Raqamli mahsulotlar</h3><p data-i18n="project2desc">Oddiy vazifalarni qulaylashtiradigan interfeyslar.</p><div class="tag-row"><span>IDEA</span><span>DESIGN</span><span>CODE</span></div></article>
+      </div>
+      <p class="work-footnote" data-i18n="workNote">* Bu bo‘lim — kelajakdagi loyihalar uchun konseptual namunalar.</p>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="section-index">04 <span>—</span> <span data-i18n="contactLabel">BOG‘LANISH</span></div>
+      <div class="contact-panel"><div class="contact-orb"></div><p class="contact-kicker" data-i18n="contactKicker">BIROR G‘OYANGIZ BORMI?</p><h2 data-i18n="contactTitle">Keling, uni<br><em>birga yaratamiz.</em></h2><a class="contact-mail" href="mailto:hello@ozodbek.dev">hello@ozodbek.dev <span>↗</span></a><div class="contact-bottom"><span data-i18n="contactNote">Yaxshi g‘oyalar suhbatdan boshlanadi.</span><span>FERGANA, UZBEKISTAN</span></div></div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">O.</span><span>ozodbek<span class="brand-dot">/</span>dev</span></a><span>© 2026 OZODBEK. <span data-i18n="rights">BARCHA HUQUQLAR HIMOYALANGAN.</span></span><a href="#home" class="back-top" data-i18n="backTop">YUQORIGA ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
